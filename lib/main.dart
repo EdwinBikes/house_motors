@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:blog_the_auto/screens/home_screen.dart';
+
 
 void main() => runApp(MyApp());
 

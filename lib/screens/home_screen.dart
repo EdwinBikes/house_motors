@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -7,7 +8,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        child: Container(
+         child: Container(
           child: Column(
             children: [
               Container(
@@ -17,28 +18,29 @@ class HomeScreen extends StatelessWidget {
                 margin: const EdgeInsets.only(top: 60, bottom: 1),
                 child: Image.network(
                     'https://ih1.redbubble.net/image.776679415.5917/st,small,507x507-pad,600x600,f8f8f8.u6.jpg'),
+
               ),
-              const Text('House_Motors'),
+
+              const Text ('House_Motors'),
+
               InkWell(
-                onTap: () {},
+                onTap: (){},
                 child: Container(
-                  margin: const EdgeInsets.only(top: 25),
-                  padding: const EdgeInsets.all(20),
-                  width: double.infinity,
-                  color: Colors.white,
-                  child: const Text('Motor'),
-                ),
-              ),
+                margin: const EdgeInsets.only(top: 25),
+                padding: const EdgeInsets.all(20),
+                width: double.infinity,
+                color: Colors.white,
+                child: const Text('Motor'),
+              ),),
               InkWell(
-                onTap: () {},
+                onTap: (){},
                 child: Container(
                   margin: const EdgeInsets.only(top: 15),
                   padding: const EdgeInsets.all(20),
                   width: double.infinity,
                   color: Colors.white,
                   child: const Text('Interior'),
-                ),
-              ),
+                ),),
               Container(
                 margin: const EdgeInsets.only(top: 15),
                 padding: const EdgeInsets.all(20),
@@ -67,10 +69,8 @@ class HomeScreen extends StatelessWidget {
                 width: double.infinity,
                 color: Colors.black54,
                 alignment: Alignment.center,
-                child: const Text(
-                  'Creado por Edwin Bikes',
-                  style: TextStyle(
-                      color: Colors.white, fontWeight: FontWeight.bold),
+                child: const Text('Creado por Edwin Bikes', style: TextStyle(
+                    color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
             ],
@@ -81,15 +81,18 @@ class HomeScreen extends StatelessWidget {
         title: const Text('Blog House Motors'),
         backgroundColor: Colors.lightBlueAccent,
       ),
+
       body: ListView(
         children: <Widget>[
           InkWell(
-            onTap: () {},
-            child: Card(
+          onTap: (){},
+            child:
+            Card(
               child: Image.network(
-                  'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'),
-            ),
-          ),
+                'https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'),
+            ),),
+
+
           Card(
             child: Image.network(
                 'https://images.pexels.com/photos/574205/pexels-photo-574205.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260'),
@@ -152,10 +155,8 @@ class HomeScreen extends StatelessWidget {
             width: double.infinity,
             color: Colors.lightBlueAccent,
             alignment: Alignment.center,
-            child: const Text(
-              'House Motors',
-              style:
-                  TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
+            child: const Text('House Motors', style: TextStyle(
+                color: Colors.white, fontWeight: FontWeight.bold),
             ),
           ),
         ],
