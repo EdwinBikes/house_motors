@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:pomodoro/screens/home_screen.dart';
 
 class DrawerScreen extends StatelessWidget {
-  const DrawerScreen({Key? key, required AppBar appBar, required ListView body}) : super(key: key);
+  const DrawerScreen({Key? key, required AppBar appBar, required ListView body})
+      : super(key: key);
 
   @override
-    Widget build (BuildContext context){
+  Widget build(BuildContext context) {
     return DrawerScreen(
       appBar: AppBar(
         title: const Text('Honda Eg 57'),
         backgroundColor: Colors.lightBlueAccent,
       ),
-
       body: ListView(
         children: <Widget>[
           Card(
@@ -79,4 +78,3 @@ class DrawerScreen extends StatelessWidget {
     );
   }
 }
-
